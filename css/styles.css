@@ -25,16 +25,17 @@
 /* ----- Header ----- */
 #header-image{
     width: 100%;
-    height: 35vh;
+    height: 300px;
     background-image: url("../assets/bg-header.jpg");
-    background-size: 100vw 70vh;
+    background-size: 100vw 600px;
     background-position-y: 10%;
+    background-repeat: no-repeat;
 }
 #header-image > h1{
     color: white;
     position: absolute;
-    top: 13vh;
-    left: 10vw;
+    top: 115px;
+    left: 125px;
     font-family: 'Hastro', sans-serif;
     font-size: 64px;
 }
@@ -55,16 +56,19 @@
     color: rgb(255, 255, 255);
     border-radius: 8px;
 }
-#contenedor-textmenu .nav-link:hover{
-    background-color: rgb(221, 151, 65);
+#contenedor-textmenu .nav-link:hover,
+#container-navlogo p:hover{
+    color: #272727;
 }
-#contenedor-svglogo > svg{
+#contenedor-svglogo > svg,
+#container-navlogo p{
     border-radius: 8px;
     transition: all 0.45s;
 }
 #contenedor-svglogo > svg:hover{
     cursor: pointer;
-    background-color: rgb(207, 141, 59);
+    background-color: rgb(221, 139, 38);
+    stroke: black;
 }
 .offcanvas-body{
     padding-top: 18vh;
@@ -79,7 +83,7 @@
 #offcanvas-buttons{
     margin-left: 0.25vw;
 }
-.btn-98{
+.btn-98 {
     background-image: none;
     margin-bottom: 1vh;
     border-top: none;
@@ -87,30 +91,28 @@
     border-left: none;
     color: rgb(231, 143, 36);
     border-bottom: 3px solid rgb(255, 174, 74);
-}
-.btn-98 {
     --thickness: 3px;
     box-sizing: border-box;
     background: none;
     -webkit-clip-path: polygon(
-      0 0,
-      100% 0,
-      100% calc(100% + var(--thickness)),
-      0 calc(100% + var(--thickness))
+        0 0,
+        100% 0,
+        100% calc(100% + var(--thickness)),
+        0 calc(100% + var(--thickness))
     );
     clip-path: polygon(
-      0 0,
-      100% 0,
-      100% calc(100% + var(--thickness)),
-      0 calc(100% + var(--thickness))
+        0 0,
+        100% 0,
+        100% calc(100% + var(--thickness)),
+        0 calc(100% + var(--thickness))
     );
     display: block;
     font-weight: 900;
     padding: 2px 0;
     position: relative;
     text-transform: uppercase;
-  }
-  .btn-98:before {
+}
+.btn-98:before {
     background: white;
     bottom: calc(var(--thickness) * -1);
     content: "";
@@ -118,22 +120,22 @@
     height: var(--thickness);
     position: absolute;
     width: 100%;
-  }
-  .btn-98:hover:before {
+}
+.btn-98:hover:before {
     -webkit-animation: slide 0.5s ease;
     animation: slide 0.5s ease;
-  }
+}
 @keyframes slide {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     50% {
-      transform: translateX(100%);
+        transform: translateX(100%);
     }
     51% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
