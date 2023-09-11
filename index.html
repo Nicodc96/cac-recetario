@@ -9,7 +9,54 @@
         <link rel="shortcut icon" href="./assets/oven.ico" type="image/x-icon">
     </head>
     <body>
-        <header></header>
+        <header>
+            <section id="header-image">
+                <h1>DCCooking</h1>
+            </section>
+            <nav class="navbar navbar-expand-lg bg-orange">
+                <section class="d-flex w-100 justify-content-evenly gap-10 me-5">
+                    <div id="container-navlogo">
+                        <a href="./index.html" norefferer>
+                            <img src="./assets/oven.svg" alt="logo-olla" width="35px" height="40px" />
+                            <p>DC Cooking</p>
+                        </a>
+                    </div>
+                    <div id="contenedor-textmenu">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link" href="#">Recetas</a>
+                            <a class="nav-link" href="#">Acerca de</a>
+                            <a class="nav-link" href="#">Nosotros</a>
+                          </div>
+                    </div>
+                    <div id="contenedor-svglogo">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-bs-toggle="offcanvas" data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                    </div>
+                </section>
+            </nav>
+            <section class="offcanvas offcanvas-end" tabindex="-1" id="menu-offcanvas" aria-labelledby="menu-offcanvas-label">
+                <div class="offcanvas-header bg-orange">
+                    <h5 class="text-white">Navegación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form class="d-flex mb-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Búsqueda..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                    <section id="offcanvas-buttons">
+                        <button type="button" class="btn-98">Recetas</button>
+                        <button type="button" class="btn-98">Nosotros</button>
+                        <button type="button" class="btn-98">Contacto</button>
+                    </section>
+                </div>
+            </section>
+        </header>
         <main></main>
         <footer></footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
