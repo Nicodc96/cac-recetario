@@ -2,10 +2,17 @@
 @import url('https://fonts.cdnfonts.com/css/hastro');
 @import url('https://fonts.cdnfonts.com/css/molendra');
 @import url('https://fonts.cdnfonts.com/css/pacifico');
+@import url('https://fonts.cdnfonts.com/css/balleny');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:root {
+    --background: #2C2C2C;
+    --linkedin: #0A66C2;
+    --github: #ebebeb;
+    --twitter: #1D9BF0;
 }
 .bg-orange{
     background-color: rgb(255, 160, 44);
@@ -30,6 +37,9 @@
 .text-pacifico{
     font-family: 'Pacifico', sans-serif;
 }
+.text-balleny{
+    font-family: 'Balleny', sans-serif;
+}
 .content{
     padding: 30px;
 }
@@ -40,8 +50,8 @@
     z-index: 1;
 }
 .sticky + .content {
-    padding-top: 90px;
-  }
+    padding-top: 60px;
+}
 /* ----- Header ----- */
 #header-image{
     width: 100%;
@@ -170,7 +180,6 @@ body{
 }
 #imagen-principal{
     display: flex;
-    margin: 35px 0px 35px 0px;
     justify-content: center;
 }
 #imagen-principal > img{
@@ -184,7 +193,9 @@ body{
     font-style: italic;
     color: #DA2B1F;
 }
-#contenedor-carrousel{
+#contenedor-carrousel,
+#imagen-principal,
+#main-video{
     margin: 35px 0px 35px 0px;
 }
 .carousel-item > img{
@@ -231,4 +242,108 @@ body{
 }
 #main-quecocinar-cards .card > .card-body h5{
     font-size: 15px;
+}
+#main-video > h3{
+    text-align: center;
+    margin-bottom: 35px;
+    color: #DA2B1F;
+}
+#main-video iframe{
+    width:670px;
+    height:375px;
+    border: 4px solid #252525;
+    border-radius: 8px;
+}
+/* ----- Footer ----- */
+#contenedor-footer{
+    height: 300px;
+    padding-top: 50px;
+}
+#container-logofooter > a{
+    display: flex;
+    gap: 0.5vw;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+#container-logofooter > a:link{
+    text-decoration: none;
+}
+#container-logofooter p{
+    margin-bottom: 0;
+    padding-top: 8px;
+    border-radius: 8px;
+    transition: all 0.45s;
+    font-size: 24px;
+}
+#container-logofooter p:hover{
+    color: #272727;
+}
+#contenedor-footer .col-4{
+    display: flex;
+    justify-content: center;
+}
+.social-media-buttons{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-right: 5vw;
+}
+.social-media-button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
+}
+.social-media-button:hover {
+    outline-offset: 3px;
+    transition: all 0.3s;
+}
+.social-media-button img {
+    transition: all 0.3s;
+}
+.social-media-button:hover img {
+    transform: scale(1.15);
+}
+.social-media-button:hover:nth-child(1) {
+    background:  radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    ); 
+}
+.social-media-button:hover:nth-child(2) {
+    background-color: var(--twitter);
+}
+.social-media-button:hover:nth-child(3) {
+    background-color: var(--background);
+}
+.social-media-button:hover:nth-child(4) {
+    background-color: var(--linkedin);
+}
+.icon-git > img{
+    width: 44px;
+    height: 44px;
+    padding: 4px;
+}
+#contenedor-footer .col-12{
+    padding-left: 11vw;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.col-12 p:nth-child(2){
+    margin-top: 20px;
+}
+#footer-nombre{
+    display: flex;
+    justify-content: end;
+    padding-right: 5vw;
+}
+#footer-nombre > p{
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
 }
