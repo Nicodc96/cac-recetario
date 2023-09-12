@@ -1,12 +1,14 @@
 /* ----- Estilos generales ----- */
 @import url('https://fonts.cdnfonts.com/css/hastro');
+@import url('https://fonts.cdnfonts.com/css/molendra');
+@import url('https://fonts.cdnfonts.com/css/pacifico');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .bg-orange{
-    background-color: rgb(255, 174, 74);
+    background-color: rgb(255, 160, 44);
 }
 .gap-10{
     gap: 10vw;
@@ -21,6 +23,12 @@
 .text-active{
     font-weight: 500;
     color: rgb(235, 235, 235);
+}
+.text-molendra{
+    font-family: 'Molendra', sans-serif;
+}
+.text-pacifico{
+    font-family: 'Pacifico', sans-serif;
 }
 /* ----- Header ----- */
 #header-image{
@@ -71,7 +79,7 @@
     stroke: black;
 }
 .offcanvas-body{
-    padding-top: 18vh;
+    padding-top: 180px;
     padding-right: 6vw;
     background-image: url("../assets/food-bg1.png");
     background-size: cover;
@@ -80,12 +88,15 @@
     font-weight: 600;
     font-size: 18px;
 }
+.offcanvas-body form {
+    margin-bottom: 18px;
+}
 #offcanvas-buttons{
     margin-left: 0.25vw;
 }
 .btn-98 {
     background-image: none;
-    margin-bottom: 1vh;
+    margin-bottom: 10px;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -138,4 +149,74 @@
     to {
         transform: translateX(0);
     }
+}
+/* ----- Main ----- */
+body{
+    background-image: url("../assets/background-repeat.jpg");
+    background-repeat: repeat;
+    background-size: 650px;
+}
+#imagen-principal{
+    display: flex;
+    margin: 35px 0px 35px 0px;
+    justify-content: center;
+}
+#imagen-principal > img{
+    width: 65vw;
+}
+#main-carrousel > h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 55px;
+    font-style: italic;
+    color: #DA2B1F;
+}
+#contenedor-carrousel{
+    margin: 35px 0px 35px 0px;
+}
+.carousel-item > img{
+    filter: brightness(45%);
+}
+.comida-veg,
+.comida-ita,
+.comida-arg,
+.comida-fran{
+    border-radius: 5px;
+    height: 500px;
+}
+#contenedor-quecocinar-titulo{
+    gap: 20px;
+}
+#main-quecocinar-cards{
+    margin: 25px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+}
+#main-quecocinar-cards > div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 60vw;
+}
+#main-quecocinar-cards .card{
+    width: 13vw;
+    transition: all 0.35s;
+}
+#main-quecocinar-cards .card:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#main-quecocinar-cards .card-img-top{
+    width: 13vw;
+    height: 200px;
+}
+#main-quecocinar-cards .card > .card-body{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+#main-quecocinar-cards .card > .card-body h5{
+    font-size: 15px;
 }
