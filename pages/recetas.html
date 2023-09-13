@@ -80,7 +80,7 @@
     </header>
     <main>
         <section id="contenedor-main">
-            <h2 class="text-center fs-2 fw-lighter text-pacifico">Todas nuestras recetas</h2>
+            <h2 class="text-center fw-lighter text-pacifico">Todas nuestras recetas</h2>
             <div class="row width-95">
               <div class="col-3" id="colControlCards">
                 <div id="wrapperControlsCards">
@@ -111,15 +111,40 @@
                           <label for="chkOrdenarAZ" class="form-check-label">Alfabeto (A-Z)</label>
                           <label for="chkOrdenarZA" class="form-check-label">Alfa. Invertido (Z-A)</label>
                           <label for="chkOrdenarCategoria" class="form-check-label">Categoría</label>
-                          <label for="chkOrdenarDificultad" class="form-check-label">Dificultad</label>
+                          <label for="chkOrdenarDificultad" class="form-check-label">Tiempo Elaboración</label>
                         </div>
                       </div>
                     </section>
                   </div>
                 </div>
               </div>
-              <div class="col-9 d-flex gap-3 flex-wrap justify-content-center" id="contenedorCards">
-                
+              <div class="col-9 d-flex gap-3 flex-wrap justify-content-center" id="contenedorCardsR">
+                <article class="card" id="budinConArandanos" data-bs-toggle="modal" data-bs-target="#modalReceta1">
+                    <img src="../assets/budin-arandanos.webp" class="card-img-top" alt="budin de arandanos">
+                    <div class="card-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M7 10l6 0" />
+                            <path d="M10 7l0 6" />
+                            <path d="M21 21l-6 -6" />
+                          </svg>
+                          <h5 class="card-title">Budín con arándanos</h5>
+                    </div>
+                </article>
+                <article class="card" id="alitasFritas" data-bs-toggle="modal" data-bs-target="#modalReceta2">
+                    <img src="../assets/alitas-fritas.webp" class="card-img-top" alt="alitas fritas">
+                    <div class="card-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M7 10l6 0" />
+                            <path d="M10 7l0 6" />
+                            <path d="M21 21l-6 -6" />
+                          </svg>
+                          <h5 class="card-title">Alitas fritas super crujientes</h5>
+                    </div>
+                </article>
               </div>
             </div>
             <div class="row width-95">
@@ -178,6 +203,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-    <script src="../js/recetas.js"></script>
+    <script src="../js/recetas.js" type="module"></script>
 </body>
 </html>

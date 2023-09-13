@@ -18,3 +18,14 @@ offcanvas_btnInicioR.addEventListener("click", () => {
 offcanvas_btnRecetasR.addEventListener("click", () => {
     window.location.href = "./recetas.html";
 });
+
+/* Sección lógica para cards */
+import { contenedorModales } from "./modals.js";
+import { crearModal } from "./elementos.js";
+const contenedorCardsRecetas = document.querySelector("#contenedorCardsR");
+const receta_budinConArandanos = document.querySelector("#budinConArandanos");
+const receta_alitasFritas = document.querySelector("#alitasFritas");
+
+
+contenedorCardsRecetas.appendChild(crearModal(1, contenedorModales[0](), "Budín con arándanos"));
+contenedorCardsRecetas.appendChild(crearModal(2, contenedorModales[1](), "Alitas fritas super crujientes"));

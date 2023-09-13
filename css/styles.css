@@ -356,7 +356,10 @@ body{
 }
 /* ----- Recetas ----- */
 #contenedor-main h2{
+    font-size: 40px;
     margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 35px;
     color: #DA2B1F;
 }
 .divisor{
@@ -368,19 +371,15 @@ body{
 #buscadorContainer {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 8px;
 }
 #buscadorInput{
     height: 35px;
+    width: 12vw;
     border-radius: 10px;
-    padding:  5px 30px 5px 10px;
-}
-#wrapperControlsCards{
-    height: 500px;
+    margin-top: 2px;
 }
 #containerControlsCards{
-    position: sticky;
-    top: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,4 +398,24 @@ body{
     margin-bottom: 75px;
     gap: 10vw;
     justify-content: center;
+}
+#contenedorCardsR .card{
+    width: 15vw;
+    height: 300px;
+    transition: all 0.45s;
+}
+#contenedorCardsR .card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#contenedorCardsR .card-img-top{
+    width: 14.9vw;
+    height: 200px;
+}
+#contenedorCardsR .card-body{
+    text-align: center;
+    padding-top: 5px;
+}
+#contenedorCardsR .card-body h5{
+    font-size: 18px;
 }
