@@ -1,0 +1,218 @@
+/* -------- index -------- */
+@media screen and (max-width:1335px) {
+    .col-12 p{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1255px) {
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 16vw;
+    }
+}
+@media screen and (max-width:991px) {
+    #contenedor-textmenu .nav-link{
+        display: none;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 18vw;
+    }
+    #imagen-principal > img{
+        width: 70vw;
+    }
+    #main-carrousel > h2{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:900px){
+    .offcanvas-body{
+        padding-top: 215px;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 19vw;
+    }
+    #imagen-principal > img{
+        width: 75vw;
+    }
+    #main-carrousel > h2{
+        font-size: 45px;
+    }
+    .col-12 p{
+        width: 80%;
+    }
+    #footer-nombre{
+        justify-content: center;
+        margin-top: 15px;
+        padding-right: 0;
+    }    
+}
+@media screen and (max-width:800px){
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 22vw;
+    }
+    #imagen-principal > img{
+        width: 80vw;
+    }
+    #main-carrousel > h2{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:768px) {
+    .d-none{
+        display: block!important;
+    }
+    .comida-veg,
+    .comida-ita,
+    .comida-arg,
+    .comida-fran{
+        height: 400px;
+    }
+    #contenedor-footer .col-4{
+        padding-left: 2vw;
+        width: 50%;
+    }
+    #contenedor-footer .col-8{
+        width: 50%;
+    }
+}
+@media screen and (max-width:672px) {
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 26vw;
+    }
+    #imagen-principal > img{
+        width: 85vw;
+    }
+    #main-carrousel > h2{
+        font-size: 37px;
+    }
+    #main-video iframe{
+        width:580px;
+        height:305px;
+    }
+    #contenedor-footer{
+        height: 350px;
+    }
+    #container-logofooter p{
+        margin-bottom: 20px;
+    }
+    #contenedor-footer .col-8,
+    #contenedor-footer .col-4{
+        display: flex;
+        justify-content: center;
+        width: 94%;
+        margin-left: 7vw;
+    }
+    .social-media-buttons{
+        margin-right: 0;
+    }
+    .col-12 p{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:610px){
+    #header-image > h1{
+        font-size: 50px;
+        top: 135px;
+        left: 80px;
+    }
+    .comida-veg,
+    .comida-ita,
+    .comida-arg,
+    .comida-fran{
+        height: 350px;
+    }
+    #contenedor-quecocinar-titulo{
+        margin-left: 20vw;
+    }
+    #contenedor-texto-main-quecocinar > p{
+        width: 70%;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 28vw;
+    }
+}
+@media screen and (max-width:530px){
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 30vw;
+    }
+    .comida-veg,
+    .comida-ita,
+    .comida-arg,
+    .comida-fran{
+        height: 300px;
+    }
+    #contenedor-quecocinar-titulo{
+        margin-left: 15vw;
+    }
+    #main-quecocinar-cards > div{
+        max-width: 80vw;
+    }
+    #main-carrousel > h2{
+        font-size: 33px;
+    }
+}
+@media screen and (max-width:518px){
+    #contenedor-footer{
+        height: 400px;
+    }
+}
+@media screen and (max-width:460px){
+    #header-image > h1{
+        font-size: 46px;
+        top: 135px;
+        left: 50px;
+    }
+}
+@media screen and (max-width:415px){
+    #main-quecocinar-cards > div{
+        max-width: 80vw;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 50vw;
+    }
+    #contenedor-quecocinar-titulo{
+        margin-left: 7vw;
+    }
+    #contenedor-texto-main-quecocinar > p{
+        width: 100%;
+    }
+}
+@media screen and (max-width:300px){
+    #header-image > h1{
+        font-size: 30px;
+        top: 145px;
+        left: 35px;
+    }
+    #main-carrousel > h2{
+        font-size: 25px;
+    }
+    .comida-veg,
+    .comida-ita,
+    .comida-arg,
+    .comida-fran{
+        height: 200px;
+    }
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 65vw;
+    }
+    .social-media-button{
+        width: 32px;
+        height: 32px;
+    }
+    .icon-git img{
+        width: 28px;
+        height: 28px;
+    }
+    #contenedor-footer{
+        height: 440px;
+    }
+}
