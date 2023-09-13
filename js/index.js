@@ -7,3 +7,14 @@ let sticky = navbar.offsetTop;
 const toggleSticky = () => {
     window.scrollY >= sticky ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
+
+/* Sección para control de eventos */
+const offcanvas_btnInicio = document.querySelector("#offcBtnInicio");
+const offcanvas_btnRecetas = document.querySelector("#offcBtnRecetas");
+
+offcanvas_btnInicio.addEventListener("click", () => {
+    window.location.href = "./index.html";
+});
+offcanvas_btnRecetas.addEventListener("click", () => {
+    window.location.href = "./pages/recetas.html";
+});

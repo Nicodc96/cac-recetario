@@ -52,6 +52,9 @@
 .sticky + .content {
     padding-top: 60px;
 }
+.width-95{
+    width: 95%!important;
+}
 /* ----- Header ----- */
 #header-image{
     width: 100%;
@@ -350,4 +353,50 @@ body{
 }
 #footer-nombre .text-balleny{
     transition: all 0.45s;    
+}
+/* ----- Recetas ----- */
+#contenedor-main h2{
+    margin-top: 35px;
+    color: #DA2B1F;
+}
+.divisor{
+    width: 17vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cfcfcf;
+  }
+#buscadorContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#buscadorInput{
+    height: 35px;
+    border-radius: 10px;
+    padding:  5px 30px 5px 10px;
+}
+#wrapperControlsCards{
+    height: 500px;
+}
+#containerControlsCards{
+    position: sticky;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 325px;
+    margin-left: 2vw;
+    padding: 2vw 40px 2vw 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #adadad;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+#contenedorPaginacion{
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    gap: 10vw;
+    justify-content: center;
 }
