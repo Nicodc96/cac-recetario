@@ -219,3 +219,218 @@
         height: 440px;
     }
 }
+/* -------- recetas -------- */
+@media screen and (max-width:1300px) {
+    #colControlCards{
+        width: 30%;
+    }
+    #contenedorCardsR{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1200px) {
+    #colControlCards,
+    #contenedorPaginacionRelleno{
+        width: 35%;
+    }
+    #contenedorCardsR,
+    #contenedorPaginacion{
+        width: 65%;
+    }    
+}
+@media screen and (max-width:1100px) {
+    #contenedorCardsR .card{
+        width: 18vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 17.9vw;
+    }
+}
+
+@media screen and (max-width:990px){
+    #modalReceta2 .img-top-modal{
+        width: 450px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:910px){
+    #colControlCards,
+    #contenedorCardsR,
+    #contenedorPaginacion{
+        width: 100%;
+        margin-left: 5vw;
+    }
+    #contenedorPaginacionRelleno{
+        width: 0%;
+    }
+    #contenedorCardsR,
+    #contenedorPaginacion{
+        margin-left: 6vw;
+    }
+    #colControlCards{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    #containerControlsCards{
+        width: 50vw;
+    }
+    #containerControlsCards > *,
+    #buscadorInput{
+        width: 30vw;
+    }
+    #contenedorCardsR .card{
+        width: 25vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 24.9vw;
+    }
+}
+@media screen and (max-width:800px){
+    #contenedorCardsR .card{
+        width: 28vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 27.9vw;
+    }
+}
+@media screen and (max-width:635px) {
+    #contenedorCardsR .card{
+        width: 30vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 29.9vw;
+    }
+}
+@media screen and (max-width:600px){
+    #containerControlsCards{
+        width: 60vw;
+    }
+    #containerControlsCards > *,
+    #buscadorInput{
+        width: 40vw;
+    }
+    #contenedorCardsR{
+        width: 60%;
+        margin-left: 24vw;
+    }
+    #contenedorCardsR .card{
+        width: 35vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 34.9vw;
+    }
+}
+@media screen and (max-width:530px){
+    #contenedorCardsR .card{
+        width: 40vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 39.9vw;
+    }
+}
+@media screen and (max-width:500px){
+    #contenedorPaginacion > *{
+        height: 40px;
+        font-size: 14px;
+    }
+    #modalReceta1 .img-top-modal{
+        height: 400px;
+        width: 400px;
+    }
+    #modalReceta2 .img-top-modal{
+        height: 300px;
+        width: 400px;
+    }
+}
+@media screen and (max-width:454px){
+    #contenedor-main h2{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    #containerControlsCards{
+        width: 70vw;
+    }
+    #containerControlsCards > *,
+    #buscadorInput{
+        width: 50vw;
+    }
+    #contenedorPaginacion{
+        gap: 6vw;
+    }
+    #contenedorCardsR .card{
+        width: 45vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: 44.9vw;
+    }
+}
+@media screen and (max-width:415px){
+    #contenedorPaginacion{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #modalReceta1 .img-top-modal{
+        height: 350px;
+        width: 350px;
+    }
+    #modalReceta2 .img-top-modal{
+        height: 200px;
+        width: 350px;
+    }
+}
+@media screen and (max-width:360px){
+    #containerControlsCards{
+        width: 80vw;
+    }
+    #containerControlsCards > *,
+    #buscadorInput{
+        width: 60vw;
+    }
+    #contenedorCardsR .card{
+        width: 52vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: calc(52vw - 2.2vw);
+    }
+    #modalReceta1 .img-top-modal{
+        height: 300px;
+        width: 300px;
+    }
+    #modalReceta2 .img-top-modal{
+        width: 300px;
+    }
+    .container-img-pasos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:300px){
+    #containerControlsCards{
+        width: 90vw;
+    }
+    #containerControlsCards > *{
+        width: 70vw;
+    }
+    #buscadorInput{
+        width: 60vw;
+    }
+    #contenedorCardsR .card{
+        width: 65vw;
+    }
+    #contenedorCardsR .card-img-top{
+        width: calc(64.5vw);
+    }
+    #contenedorCardsR{
+        width: 100%;
+        margin-left: 7vw;
+    }
+    #modalReceta1 .img-top-modal{
+        height: 270px;
+        width: 270px;
+    }
+    #modalReceta2 .img-top-modal{
+        width: 250px;
+    }
+}

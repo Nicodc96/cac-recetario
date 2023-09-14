@@ -7,7 +7,7 @@ const contenedorModales = [
     function(){ // 1
         const divRow = createElementCustom("div", ["mb-3", "row"], "", {});
         const col_divRow = createElementCustom("div", ["col", "d-flex", "justify-content-center"], "", {});
-        const img = createElementCustom("img", [], "", {
+        const img = createElementCustom("img", ["img-top-modal"], "", {
             "width": "500px", 
             "height": "500px",
             "src": "../assets/budin-arandanos.webp"
@@ -69,7 +69,7 @@ const contenedorModales = [
             <h4 class="text-center">Pasos a seguir</h4>
             <h5>Primer paso</h5>
             <p>Cremar azúcar, ralladura de limón, manteca pomada y queso crema. Agregar huevos de a uno por vez y luego harina tamizada.</p>
-            <div class="d-flex justify-content-center gap-2">
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/budin_paso1.webp" target="_blank">
                     <img src="../assets/budin_paso1.webp" alt="receta_budin_paso1" class="rounded" width="100px" height="100px" />
                 </a>
@@ -82,7 +82,7 @@ const contenedorModales = [
             </div>
             <h5>Segundo paso</h5>
             <p>Batir hasta lograr una crema. Sumar los arándanos limpios, secos y rociados con un poco de jugo de limón (el ácido del jugo del limón hace que luego no se forme esa aureola verde alrededor de los arándanos). Mezclar y poner dentro de la budinera previamente forrada la base con papel manteca. Esta budinera es de aproximadamente 25 x 10 cm.</p>
-            <div class="d-flex justify-content-center gap-2">
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/budin_paso4.webp" target="_blank">
                     <img src="../assets/budin_paso4.webp" alt="receta_budin_paso4" class="rounded" width="100px" height="100px" />
                 </a>
@@ -94,8 +94,8 @@ const contenedorModales = [
                 </a>
             </div>
             <h5>Tercer paso</h5>
-            <p>Cocinar en horno pre-calentado a 180 por aproximadamente 45 minutos (controlar cocción). Una vez frío desmoldar y glasear. Para el glaseado mezclar azúcar impalpable con parte del jugo de limón, ir agregando poco a poco hasta lograr una mezcla fluida pero con consistencia. Decorar con arándanos frescos.</p>
-            <div class="d-flex justify-content-center gap-2">
+            <p>Cocinar en horno pre-calentado a 180° por aproximadamente 45 minutos (controlar cocción). Una vez frío desmoldar y glasear. Para el glaseado mezclar azúcar impalpable con parte del jugo de limón, ir agregando poco a poco hasta lograr una mezcla fluida pero con consistencia. Decorar con arándanos frescos.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/budin_paso7.webp" target="_blank">
                     <img src="../assets/budin_paso7.webp" alt="receta_budin_paso7" class="rounded" width="100px" height="100px" />
                 </a>
@@ -114,7 +114,7 @@ const contenedorModales = [
     function(){ // 2
         const divRow = createElementCustom("div", ["mb-3", "row"], "", {});
         const col_divRow = createElementCustom("div", ["col", "d-flex", "justify-content-center"], "", {});
-        const img = createElementCustom("img", [], "", {
+        const img = createElementCustom("img", ["img-top-modal"], "", {
             "width": "500px", 
             "height": "400px",
             "src": "../assets/alitas-fritas.webp"
@@ -181,14 +181,14 @@ const contenedorModales = [
             <h4 class="text-center">Pasos a seguir</h4>
             <h5>Primer paso</h5>
             <p>Siempre que hago alitas, las hago hervir por lo menos 15 minutos. Es opcional pero haciendo esto sé que en el momento de freír van a estar a punto.</p>
-            <div class="d-flex justify-content-center gap-2">
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/alitas_paso1.webp" target="_blank">
                     <img src="../assets/alitas_paso1.webp" alt="receta_alitas_paso1" class="rounded" width="100px" height="100px" />
                 </a>
             </div>
             <h5>Segundo paso</h5>
             <p>Agregamos lo seco primero, harina y los condimentos.</p>
-            <div class="d-flex justify-content-center gap-2">
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/alitas_paso2.webp" target="_blank">
                     <img src="../assets/alitas_paso2.webp" alt="receta_alitas_paso2" class="rounded" width="100px" height="100px" />
                 </a>
@@ -198,7 +198,7 @@ const contenedorModales = [
             </div>
             <h5>Tercer paso</h5>
             <p>En este paso lo húmedo el huevo y la leche. Luego, mezclar hasta que te quede la mezcla como en la segunda imagen.</p>
-            <div class="d-flex justify-content-center gap-2">
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/alitas_paso4.webp" target="_blank">
                     <img src="../assets/alitas_paso4.webp" alt="receta_alitas_paso3" class="rounded" width="100px" height="100px" />
                 </a>
@@ -208,14 +208,14 @@ const contenedorModales = [
             </div>
             <h5>Cuarto paso</h5>
             <p>En una fuente ponemos la harina y, en este caso no tenía cereal y coloqué puré instantáneo (puede hacer solo con harina no hay problema; la única diferencia entre el cereal y el puré instantáneo es lo crocante y quedan más sequitas las alitas)...</p>
-            <div class="d-flex justify-content-center gap-2">
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/alitas_paso6.webp" target="_blank">
                     <img src="../assets/alitas_paso6.webp" alt="receta_alitas_paso4" class="rounded" width="100px" height="100px" />
                 </a>
             </div>
             <h5>Quinto paso</h5>
             <p>...rebozamos y dejamos descansar en un freezer o congelador 20’ minutos.</p>
-            <div class="d-flex justify-content-center gap-2">
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/alitas_paso7.webp" target="_blank">
                     <img src="../assets/alitas_paso7.webp" alt="receta_alitas_paso5" class="rounded" width="100px" height="100px" />
                 </a>
@@ -225,7 +225,7 @@ const contenedorModales = [
             </div>
             <h5>Sexto paso</h5>
             <p>Luego de sacar las alitas del freezer, fritamos unos diez minutos o el punto que usted desee.</p>
-            <div class="d-flex justify-content-center gap-2">
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <a href="../assets/alitas_paso9.webp" target="_blank">
                     <img src="../assets/alitas_paso9.webp" alt="receta_alitas_paso_final" class="rounded" width="100px" height="100px" />
                 </a>
