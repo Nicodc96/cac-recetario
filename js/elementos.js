@@ -1,5 +1,5 @@
 /* 
-    Ventana modal customizada diseñada por Nicolás Díaz, año 2022. Usted es libre de utilizar,
+    Ventana modal customizada diseñada por Nicolás L. Díaz, año 2022. Usted es libre de utilizar,
     modificar, mejorar o agregar el contenido que desee a este archivo.
 */
 
@@ -7,7 +7,7 @@
 *   Crea una ventana modal diseñada por *Bootstrap* que servirá como contenedor
 *   para visualizar la receta correspondiente.
 *   @param {Number} numReceta N° de la receta
-*   @param {Array} elementsModalBody Array de elementos a agregar dentro del modalBody
+*   @param {Array<HTMLElement>} elementsModalBody Array de elementos a agregar dentro del modalBody
 *   @returns {HTMLDivElement} Referencia del *HTMLElement* modal diseñado.
 */
 const crearModal = (numReceta, elementsModalBody, tituloReceta) => {
@@ -57,7 +57,7 @@ const modalFooter = () => {
  * Crea un *HTMLElement* de tipo *button* que tiene como *data-bs-target*
  * el ID del modal según el número de la receta ingresada.
  * @param {Number} numReceta N° de la receta
- * @returns {HTMLElement} Referencia del *HTMLElement* button diseñado.
+ * @returns {HTMLElement} Referencia del *HTMLElement* de tipo button creado dinámicamente.
  */
 const crearModalButton = (numReceta) => {
     return createElementCustom("button", ["btn", "btn-primary"], `Receta N° ${numEjercicio}`, { 

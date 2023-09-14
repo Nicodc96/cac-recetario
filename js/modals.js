@@ -1,7 +1,7 @@
 import { createElementCustom } from "./elementos.js"
 /**
- * Array que contiene las funciones que generan el contenido necesario para las recetas, de orden 0 - N 
- * *(siendo N un número natural indeterminado)*
+ * Array que contiene las funciones que generan el contenido necesario para las ventanas modales de cada receta, 
+ * de orden 0 - N *(siendo N un número natural indeterminado)*
  */
 const contenedorModales = [
     function(){ // 1
