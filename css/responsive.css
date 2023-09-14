@@ -10,13 +10,22 @@
         width: 16vw;
     }
 }
+@media screen and (max-width:1255px) {
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 18vw;
+    }
+}
 @media screen and (max-width:991px) {
     #contenedor-textmenu .nav-link{
         display: none;
     }
+    #main-quecocinar-cards > div{
+        max-width: 100%;
+    }
     #main-quecocinar-cards .card,
     #main-quecocinar-cards .card-img-top{
-        width: 18vw;
+        width: 19vw;
     }
     #imagen-principal > img{
         width: 70vw;
@@ -31,7 +40,7 @@
     }
     #main-quecocinar-cards .card,
     #main-quecocinar-cards .card-img-top{
-        width: 19vw;
+        width: 22vw;
     }
     #imagen-principal > img{
         width: 75vw;
@@ -78,13 +87,19 @@
         width: 50%;
     }
 }
+@media screen and (max-width:750px) {
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 25vw;
+    }
+}
 @media screen and (max-width:672px) {
     #header-image{
         background-size: 100% 400px;
     }
     #main-quecocinar-cards .card,
     #main-quecocinar-cards .card-img-top{
-        width: 26vw;
+        width: 28vw;
     }
     #imagen-principal > img{
         width: 85vw;
@@ -137,13 +152,13 @@
     }
     #main-quecocinar-cards .card,
     #main-quecocinar-cards .card-img-top{
-        width: 28vw;
+        width: 30vw;
     }
 }
 @media screen and (max-width:530px){
     #main-quecocinar-cards .card,
     #main-quecocinar-cards .card-img-top{
-        width: 30vw;
+        width: 34vw;
     }
     .comida-veg,
     .comida-ita,
@@ -162,11 +177,19 @@
     }
 }
 @media screen and (max-width:518px){
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 36vw;
+    }
     #contenedor-footer{
         height: 400px;
     }
 }
 @media screen and (max-width:460px){
+    #main-quecocinar-cards .card,
+    #main-quecocinar-cards .card-img-top{
+        width: 38vw;
+    }
     #header-image > h1{
         font-size: 46px;
         top: 135px;
@@ -188,12 +211,17 @@
         width: 100%;
     }
 }
-@media screen and (max-width:300px){
+@media screen and (max-width:390px){
     #header-image > h1{
         font-size: 30px;
-        top: 145px;
+        top: 100px;
         left: 35px;
     }
+    #header-image{
+        height: 200px;
+    }        
+}
+@media screen and (max-width:305px){
     #main-carrousel > h2{
         font-size: 25px;
     }
@@ -217,6 +245,11 @@
     }
     #contenedor-footer{
         height: 440px;
+    }
+    #main-video iframe{
+        width: 275px;
+        height: 275px;
+        
     }
 }
 /* -------- recetas -------- */
