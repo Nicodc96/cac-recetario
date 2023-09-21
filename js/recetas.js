@@ -12,12 +12,16 @@ const toggleSticky = () => {
 /* Sección para control de eventos */
 const offcanvas_btnInicioR = document.querySelector("#offcBtnInicioR");
 const offcanvas_btnRecetasR = document.querySelector("#offcBtnRecetasR");
+const offcanvas_btnContactoR = document.querySelector("#offcBtnContactoR");
 
 offcanvas_btnInicioR.addEventListener("click", () => {
     window.location.href = "../index.html";
 });
 offcanvas_btnRecetasR.addEventListener("click", () => {
     window.location.href = "./recetas.html";
+});
+offcanvas_btnContactoR.addEventListener("click", () => {
+    window.location.href = "./contacto.html";
 });
 /* ---------------------------------- */
 
