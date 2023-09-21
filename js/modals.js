@@ -494,7 +494,7 @@ const contenedorModales = [
             <div class="d-flex justify-content-center gap-2 container-img-pasos">
                 <img src="../assets/tartabanana_paso8.webp" alt="receta_tartabanana_paso8" class="rounded img-steps-recipe" width="100px" height="100px" />
                 <img src="../assets/tartabanana_paso8-2.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px" />
-                <img src="../assets/tartabanana_paso8-2.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso8-3.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px" />
             </div>
             <h5>Noveno paso</h5>
             <p>Ponemos la crema 😋.</p>
