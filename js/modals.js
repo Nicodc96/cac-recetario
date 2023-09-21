@@ -377,6 +377,146 @@ const contenedorModales = [
         return [divRow, divRow2, divRow3, divRow4];
     },
     function(){ // 5
+        const divRow = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow = createElementCustom("div", ["col", "d-flex", "justify-content-center"], "", {});
+        const img = createElementCustom("img", ["img-top-modal"], "", {
+            "width": "500px", 
+            "height": "500px",
+            "src": "../assets/tartabanana_principal.webp",
+            "alt": "tarta de banana principal"
+        });      
+        
+        col_divRow.appendChild(img);
+        divRow.appendChild(col_divRow);        
+        
+        const divRow2 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow2 = createElementCustom("div", ["col", "d-flex", "gap-2"], "", {});
+        let duracion = "1 hora";
+        let cantidad_porciones = 6;
+        col_divRow2.innerHTML += `
+        <div class="d-flex gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M12 12h3.5" />
+            <path d="M12 7v5" />
+            </svg>
+            <p>${duracion}</p>
+            </div>`;
+        col_divRow2.innerHTML += `
+        <div class="d-flex gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+            </svg>
+            <p>${cantidad_porciones} porciones</p>
+        </div>`;
+                
+        divRow2.appendChild(col_divRow2);
+        const divRow3 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow3 = createElementCustom("div", ["col"], "", {});
+        const h3 = createElementCustom("h3", [], "Ingredientes", {});        
+        
+        col_divRow3.appendChild(h3);
+        col_divRow3.innerHTML += `
+            <ul>
+                <li>
+                    <p class='fw-semibold'>Para la masa:</p>
+                    <ul>
+                        <li>400gr de harina leudante</li>
+                        <li>15 cucharadas soperas de aceite y 15 de azúcar</li>
+                        <li>2 huevos</li>
+                        <li>2 cucharaditas de esencia de vainilla</li>
+                    </ul>
+                </li>
+                <li>
+                <p class='fw-semibold'>Para el relleno:</p>
+                    <ul>
+                        <li>2 bananas medianas o grandes</li>
+                        <li>1 pote/vaso de crema chico para batir</li>
+                        <li>1 pote pequeño de dulce de leche (recomendado pastelero)</li>
+                        <li>3 cucharadas soperas de azúcar impalpable</li>
+                        <li>2 cucharaditas esencia de vainilla</li>
+                        <li>1-2 barritas de chocolate amargo</li>
+                    </ul>
+                </li>
+            </ul>`;
+        divRow3.appendChild(col_divRow3);
+
+        const divRow4 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow4 = createElementCustom("div", ["col"], "", {});
+        col_divRow4.innerHTML += `
+            <h4 class="text-center">Pasos a seguir</h4>
+            <h5>Primer paso</h5>
+            <p>En un bowls ponemos, la harina, los huevos, el aceite, la esencia de vainilla y mezclamos. Lo pueden hacer con batidora, yo preferí hacerlo con un tenedor.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso1.webp" alt="receta_tartabanana_paso1" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Segundo paso</h5>
+            <p>Agregamos la harina y vamos uniendo bien todos los ingredientes. Nos va a quedar una masa media arenosa, así que vamos a llevar a la mesada y vamos a amasar unos 2 minutos hasta que nos quede bien unida y suave. Dejamos descansar la masa por 15 minutos preparamos la crema.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso2.webp" alt="receta_tartabanana_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso2-2.webp" alt="receta_tartabanana_paso2-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso2-3.webp" alt="receta_tartabanana_paso2-3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Tercer paso</h5>
+            <p>En un bolws ponemos el pote de crema y batimos un poco a velocidad baja, agregamos las 3 cucharadas soperas de azúcar impalpable y las 2 cucharaditas de esencia de vainilla y seguimos batiendo, si quieren ahí pueden subir la velocidad. Una vez que esté firme llevar a la heladera.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso3.webp" alt="receta_tartabanana_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Cuarto paso</h5>
+            <p>Prendemos el horno a fuego mínimo, enmantecamos un molde y volvemos a la masa.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso4.webp" alt="receta_tartabanana_paso4" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Quinto paso</h5>
+            <p>Con un poco de harina en la mesada, o papel manteca vamos a estirar la mesa, si se rompe no importa, se arregla. Acomodamos la masa en el molde, pinchamos con tenedor y cocinamos unos 15/20 minutos (cuando esté dorada la masa la sacamos y dejamos enfriar)</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso5.webp" alt="receta_tartabanana_paso5" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso5-2.webp" alt="receta_tartabanana_paso5-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Sexto paso</h5>
+            <p>Cortamos las bananas en rodajas finas y reservamos. Por otro lado rallamos 3 o 4 barritas de chocolate y vamos a reservar también.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso6.webp" alt="receta_tartabanana_paso6" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso6-2.webp" alt="receta_tartabanana_paso6-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Septimo paso</h5>
+            <p>Pegamos la tarta a la bandeja o plato que usemos con un poco de dulce de leche para prevenir algún accidente y se resbale de la bandeja.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso7.webp" alt="receta_tartabanana_paso7" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Octavo paso</h5>
+            <p>Ponemos una buena capa de dulce de leche y acomodamos las bananas 🍌.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso8.webp" alt="receta_tartabanana_paso8" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso8-2.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso8-2.webp" alt="receta_tartabanana_paso8-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Noveno paso</h5>
+            <p>Ponemos la crema 😋.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso9.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso9-2.webp" alt="receta_tartabanana_paso9-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Decimo paso</h5>
+            <p>Por último, rallamos el chocolate en barrita a gusto sobre la crema.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso10.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/tartabanana_paso10-2.webp" alt="receta_tartabanana_paso9-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Paso 11</h5>
+            <p>Finalmente, dejar enfríar la tarta en la heladera para que se asienten los ingredientes hasta servir.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/tartabanana_paso11.webp" alt="receta_tartabanana_paso9" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+        `;
+        divRow4.appendChild(col_divRow4);
+
+        return [divRow, divRow2, divRow3, divRow4];
     }
 ]
 

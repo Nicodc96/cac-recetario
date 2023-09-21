@@ -25,9 +25,8 @@ offcanvas_btnRecetasR.addEventListener("click", () => {
 import { contenedorModales } from "./modals.js";
 import { crearModal, createElementCustom } from "./elementos.js";
 const contenedorCardsRecetas = document.querySelector("#contenedorCardsR");
-
 /*
-    En las lineas 30 y 31 lo que hago es utilizar un div escrito en el HTML para
+    Abajo lo que hago es utilizar un div escrito en el HTML para
     anclar mis elementos creados dinámicamente. No es la manera más elegante ni reutilizable
     pero es temporal, hecho con este propósito para en el futuro ser reemplazado con métodos
     fetch o axios.
@@ -36,6 +35,7 @@ contenedorCardsRecetas.appendChild(crearModal(1, contenedorModales[0](), "Budín
 contenedorCardsRecetas.appendChild(crearModal(2, contenedorModales[1](), "Alitas fritas super crujientes"));
 contenedorCardsRecetas.appendChild(crearModal(3, contenedorModales[2](), "Revuelto de gramajo"));
 contenedorCardsRecetas.appendChild(crearModal(4, contenedorModales[3](), "Fideos con crema, jamón y champiñones"));
+contenedorCardsRecetas.appendChild(crearModal(5, contenedorModales[4](), "Tarta de banana split"));
 
 /* ---------------------------------- */
 
