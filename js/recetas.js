@@ -34,6 +34,8 @@ const contenedorCardsRecetas = document.querySelector("#contenedorCardsR");
 */
 contenedorCardsRecetas.appendChild(crearModal(1, contenedorModales[0](), "Budín con arándanos"));
 contenedorCardsRecetas.appendChild(crearModal(2, contenedorModales[1](), "Alitas fritas super crujientes"));
+contenedorCardsRecetas.appendChild(crearModal(3, contenedorModales[2](), "Revuelto de gramajo"));
+contenedorCardsRecetas.appendChild(crearModal(4, contenedorModales[3](), "Fideos con crema, jamón y champiñones"));
 
 /* ---------------------------------- */
 

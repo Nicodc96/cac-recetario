@@ -10,8 +10,9 @@ const contenedorModales = [
         const img = createElementCustom("img", ["img-top-modal"], "", {
             "width": "500px", 
             "height": "500px",
-            "src": "../assets/budin-arandanos.webp"
-        });      
+            "src": "../assets/budin-arandanos.webp",
+            "alt": "budin de arandanos"
+        });
         
         col_divRow.appendChild(img);
         divRow.appendChild(col_divRow);        
@@ -99,7 +100,8 @@ const contenedorModales = [
         const img = createElementCustom("img", ["img-top-modal"], "", {
             "width": "500px", 
             "height": "400px",
-            "src": "../assets/alitas-fritas.webp"
+            "src": "../assets/alitas-fritas.webp",
+            "alt": "alitasfritas"
         });      
         
         col_divRow.appendChild(img);
@@ -202,8 +204,177 @@ const contenedorModales = [
         return [divRow, divRow2, divRow3, divRow4];
     },
     function(){ // 3
+        const divRow = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow = createElementCustom("div", ["col", "d-flex", "justify-content-center"], "", {});
+        const img = createElementCustom("img", ["img-top-modal"], "", {
+            "width": "500px", 
+            "height": "500px",
+            "src": "../assets/gramajo_paso4.webp",
+            "alt": "revueltogramajo"
+        });      
+        
+        col_divRow.appendChild(img);
+        divRow.appendChild(col_divRow);        
+        
+        const divRow2 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow2 = createElementCustom("div", ["col", "d-flex", "gap-2"], "", {});
+        let duracion = "1h 15min";
+        let cantidad_porciones = 4;
+        col_divRow2.innerHTML += `
+        <div class="d-flex gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M12 12h3.5" />
+            <path d="M12 7v5" />
+            </svg>
+            <p>${duracion}</p>
+            </div>`;
+        col_divRow2.innerHTML += `
+        <div class="d-flex gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+            </svg>
+            <p>${cantidad_porciones} porciones</p>
+        </div>`;
+                
+        divRow2.appendChild(col_divRow2);
+        const divRow3 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow3 = createElementCustom("div", ["col"], "", {});
+        const h3 = createElementCustom("h3", [], "Ingredientes", {});        
+        
+        col_divRow3.appendChild(h3);
+        col_divRow3.innerHTML += `
+            <ul>
+                <li>1Kg de papas</li>
+                <li>1/2 cebolla mediana o 1 cebolla de verdeo</li>
+                <li>100gr de jamón cocido (york)</li>
+                <li>3 huevos</li>
+                <li>4 cucharaditas de crema de leche</li>
+                <li>1/2 taza de arvejas en lata</li>
+            </ul>`;
+        divRow3.appendChild(col_divRow3);
+
+        const divRow4 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow4 = createElementCustom("div", ["col"], "", {});
+        col_divRow4.innerHTML += `
+            <h4 class="text-center">Pasos a seguir</h4>
+            <h5>Primer paso</h5>
+            <p>Cortar las papas en bastón, fritar hasta cocinarlas, no dejar que se doren demasiado.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/gramajo_paso1.webp" alt="receta_gramajo_paso1" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Segundo paso</h5>
+            <p>Rehogar la cebolla con un chorrito de aceite. Agregar el jamón cortado en tiras y las arvejas.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/gramajo_paso2.webp" alt="receta_gramajo_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                </div>
+            <h5>Tercer paso</h5>
+            <p>En un bol mezclar los huevos con la crema ligeramente. Incorporar a la preparación anterior, junto con las papas fritas.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/gramajo_paso3.webp" alt="receta_gramajo_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Cuarto paso</h5>
+            <p>Cocinar unos minutos más hasta que los huevos se cocinen. Servir y a disfrutar! 🤤</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/gramajo_paso4.webp" alt="receta_gramajo_paso_final" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+        `;
+        divRow4.appendChild(col_divRow4);
+
+        return [divRow, divRow2, divRow3, divRow4];
     },
     function(){ // 4
+        const divRow = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow = createElementCustom("div", ["col", "d-flex", "justify-content-center"], "", {});
+        const img = createElementCustom("img", ["img-top-modal"], "", {
+            "width": "500px", 
+            "height": "500px",
+            "src": "../assets/fideoscremachampiñones_pasofinal.webp",
+            "alt": "fideoscremachampiñones"
+        });      
+        
+        col_divRow.appendChild(img);
+        divRow.appendChild(col_divRow);        
+        
+        const divRow2 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow2 = createElementCustom("div", ["col", "d-flex", "gap-2"], "", {});
+        let duracion = "25min";
+        let cantidad_porciones = 4;
+        col_divRow2.innerHTML += `
+        <div class="d-flex gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M12 12h3.5" />
+            <path d="M12 7v5" />
+            </svg>
+            <p>${duracion}</p>
+            </div>`;
+        col_divRow2.innerHTML += `
+        <div class="d-flex gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+            </svg>
+            <p>${cantidad_porciones} porciones</p>
+        </div>`;
+                
+        divRow2.appendChild(col_divRow2);
+        const divRow3 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow3 = createElementCustom("div", ["col"], "", {});
+        const h3 = createElementCustom("h3", [], "Ingredientes", {});        
+        
+        col_divRow3.appendChild(h3);
+        col_divRow3.innerHTML += `
+            <ul>
+                <li>1 cebolla grande picada en cubitos</li>
+                <li>2 cucharadas de manteca</li>
+                <li>200gr de jamón cocido (york)</li>
+                <li>1 cubito de caldo de verdura</li>
+                <li>1 taza o lata de champiñones congelados</li>
+                <li>200cc de crema de leche</li>
+                <li>1 paquete (500gr) de fideos secos a elección</li>
+                <li>Sal y pimienta</li>
+                <li>400cc de agua</li>
+            </ul>`;
+        divRow3.appendChild(col_divRow3);
+
+        const divRow4 = createElementCustom("div", ["mb-3", "row"], "", {});
+        const col_divRow4 = createElementCustom("div", ["col"], "", {});
+        col_divRow4.innerHTML += `
+            <h4 class="text-center">Pasos a seguir</h4>
+            <h5>Primer paso</h5>
+            <p>Saltear la cebolla en la manteca, agregar el jamón cocido y los champiñones.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/fideoscremachampiñones_paso1.webp" alt="receta_ficrecha_paso1" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/fideoscremachampiñones_paso1-2.webp" alt="receta_ficrecha_paso1-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/fideoscremachampiñones_paso1-3.webp" alt="receta_ficrecha_paso1-3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Segundo paso</h5>
+            <p>Agregar a la olla/sartén los fideos previamente hervidos. Luego agregar el caldo, seguido de pizca de sal y pimienta (ir probando). Agregar la crema, el agua y revolver.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/fideoscremachampiñones_paso2.webp" alt="receta_ficrecha_paso2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/fideoscremachampiñones_paso2-2.webp" alt="receta_ficrecha_paso2-2" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/fideoscremachampiñones_paso2-3.webp" alt="receta_ficrecha_paso2-3" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+            <h5>Tercer paso</h5>
+            <p>Cocinar a fuego medio bajo con ella tapada hasta que la pasta está en su punto (depende de cada pasta el tiempo). Es importante ir revolviendo cada tanto y controlar que no falte el líquido. Servir con queso rallado por encima.</p>
+            <div class="d-flex justify-content-center gap-2 container-img-pasos">
+                <img src="../assets/fideoscremachampiñones_paso3.webp" alt="receta_ficrecha_paso3" class="rounded img-steps-recipe" width="100px" height="100px" />
+                <img src="../assets/fideoscremachampiñones_pasofinal.webp" alt="receta_ficrecha_pasofinal" class="rounded img-steps-recipe" width="100px" height="100px" />
+            </div>
+        `;
+        divRow4.appendChild(col_divRow4);
+
+        return [divRow, divRow2, divRow3, divRow4];
     },
     function(){ // 5
     }
