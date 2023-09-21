@@ -44,12 +44,17 @@ const modalPasosRecetaBody = document.querySelector("#modalPasosRecetaBody");
 
 window.addEventListener("click", (e) => {
     if (e.target.matches(".img-steps-recipe")){
-        /* 
-            let modalReceta está horrible, pero no se me ocurrió otra manera de seleccionar el modal padre
-            de la receta ACTUAL, ya que si lo trato de acceder por id, este irá cambiando. Lo mismo con las
-            clases.
+        let modalRecetaPadre = e.target.parentNode;
+        /*
+            Mejora de código: Necesito encontrar el nodo contenedor del modal padre 'modalReceta#'
+            siendo '#' el número de la receta que irá cambiando. Para esto uso un búcle while
+            donde con ayuda de las expresiones regulares verifico que, mientras el id del contenedor
+            en ese momento no sea el que yo busco ('modalReceta#'), seguiré iterando reemplazando
+            la referencia con la de su nodo padre hasta encontrarlo.
         */
-        let modalReceta = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+        while (!/^(modalReceta(.*?))$/.test(modalRecetaPadre.id)){
+            modalRecetaPadre = modalRecetaPadre.parentNode;
+        }
         if (modalPasosRecetaBody.firstElementChild){
             modalPasosRecetaBody.removeChild(modalPasosRecetaBody.firstElementChild);
         }
@@ -59,9 +64,9 @@ window.addEventListener("click", (e) => {
             "alt": e.target.alt
         }));
         modalPasosRecetaBootstrap.show(modalPasosReceta);
-        modalReceta.classList.add("toggleZIndex");
+        modalRecetaPadre.classList.add("toggleZIndex");
         modalPasosReceta.addEventListener("hide.bs.modal", () => {
-            modalReceta.classList.remove("toggleZIndex");
+            modalRecetaPadre.classList.remove("toggleZIndex");
         });
     }
 })
