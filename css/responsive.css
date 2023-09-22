@@ -473,3 +473,119 @@
         width: 250px;
     }
 }
+/* -------- contacto -------- */
+@media screen and (max-width:1250px) {
+    #contenedorContactoForm{
+        width: 70vw;
+    }
+    .input-custom{
+        width: 29.5vw;
+    }
+}
+@media screen and (max-width:991px) {
+    #contenedorContactoForm{
+        width: 85vw;
+    }
+    .input-custom{
+        width: 35.5vw;
+    }
+    #imgContactanos{
+        width: 500px;
+    }
+}
+@media screen and (max-width:850px) {
+    .input-custom{
+        width: 33.5vw;
+    }
+}
+@media screen and (max-width:750px) {
+    .input-custom{
+        width: 31.5vw;
+    }
+}
+@media screen and (max-width:660px) {
+    .input-custom{
+        width: 29.5vw;
+    }
+}
+@media screen and (max-width:600px) {
+    #contenedorContacto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contenedorContacto{
+        width: 100vw;
+    }
+    #contenedorContactoForm{
+        width: 90vw;
+    }
+    .input-custom{
+        width: 33vw;
+    }
+    .floatlabel,
+    #inputTextArea{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:550px) {
+    #formContacto{
+        height: 420px;
+    }
+    .inputs{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    #inputTextArea{
+        margin-top: 10px;
+    }
+    .input-custom{
+        width: 74vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .input-custom{
+        width: 72vw;
+    }
+    #imgContactanos{
+        width: 400px;
+    }
+}
+@media screen and (max-width:440px) {
+    #imgContactanos{
+        width: 375px;
+    }
+    .input-custom{
+        width: 70vw;
+    }
+}
+@media screen and (max-width:400px) {
+    #contenedorContacto{
+        gap: 0;
+    }
+    #imgContactanos{
+        width: 325px;
+    }
+    #contenedorContactoForm{
+        width: 100vw;
+    }
+    #formContacto{
+        width: 90vw;
+    }
+    .input-custom{
+        width: 78vw;
+    }
+}
+@media screen and (max-width:350px) {
+    .input-custom{
+        width: 75vw;
+    }
+    #imgContactanos{
+        width: 300px;
+    }
+}
+@media screen and (max-width:300px) {
+    #imgContactanos{
+        width: 280px;
+    }
+}
