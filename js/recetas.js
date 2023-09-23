@@ -61,14 +61,14 @@ window.addEventListener("click", (e) => {
         while (!/^(modalReceta(.*?))$/.test(modalRecetaPadre.id)){
             modalRecetaPadre = modalRecetaPadre.parentNode;
         }
-        if (modalPasosRecetaBody.firstElementChild){
-            modalPasosRecetaBody.removeChild(modalPasosRecetaBody.firstElementChild);
-        }
+        if (modalPasosRecetaBody.firstElementChild) modalPasosRecetaBody.removeChild(modalPasosRecetaBody.firstElementChild);
+
         modalPasosRecetaBody.appendChild(createElementCustom("img", ["img-fluid"], "", {
             "id": e.target.alt,
             "src": e.target.src,
             "alt": e.target.alt
         }));
+        
         modalPasosRecetaBootstrap.show(modalPasosReceta);
         modalRecetaPadre.classList.add("toggleZIndex");
         modalPasosReceta.addEventListener("hide.bs.modal", () => {
