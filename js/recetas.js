@@ -61,7 +61,9 @@ window.addEventListener("click", (e) => {
         while (!/^(modalReceta(.*?))$/.test(modalRecetaPadre.id)){
             modalRecetaPadre = modalRecetaPadre.parentNode;
         }
-        if (modalPasosRecetaBody.firstElementChild) modalPasosRecetaBody.removeChild(modalPasosRecetaBody.firstElementChild);
+        if (modalPasosRecetaBody.firstElementChild){
+            modalPasosRecetaBody.removeChild(modalPasosRecetaBody.firstElementChild);
+        }
 
         modalPasosRecetaBody.appendChild(createElementCustom("img", ["img-fluid"], "", {
             "id": e.target.alt,
